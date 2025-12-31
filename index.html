@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Waldorf Rooms | Trusted Local Rooms</title>
-  <meta name="description" content="Safe, human-guided room and small rental connections in Waldorf, La Plata, Bryans Road, and Accokeek." />
-  <link rel="stylesheet" href="styles.css">
+  <title>Waldorf Rooms | Home</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
@@ -19,9 +18,9 @@
       </div>
       <nav aria-label="Main navigation">
         <a href="index.html">Home</a>
-        <a href="tenants.html">Tenants</a>
-        <a href="landlords.html">Landlords</a>
-        <a href="listings.html">Listings</a>
+        <a href="tenant-form.html">Tenants</a>
+        <a href="landlord-form.html">Landlords</a>
+        <a href="listings.html">Available Listings</a>
         <a href="testimonials.html">Testimonials</a>
         <a href="faq.html">FAQs</a>
       </nav>
@@ -29,22 +28,38 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" id="home">
       <div>
-        <div class="hero-main-eyebrow"><span>●</span> Trusted, local room connections</div>
+        <div class="hero-main-eyebrow">
+          <span>●</span> Trusted, local room connections
+        </div>
         <h1>Rooms & small rentals around Waldorf — without the stress of big listing sites.</h1>
         <p class="hero-subtitle">
           Serving Waldorf, La Plata, Bryans Road, and Accokeek. Divine personally guides serious tenants and local landlords so both sides feel safe, heard, and respected.
         </p>
+
+        <div class="hero-badges">
+          <div class="hero-badge">Waldorf · La Plata · Bryans Road · Accokeek</div>
+          <div class="hero-badge">Human-guided matching, not just a website</div>
+        </div>
+
         <div class="hero-cta-row">
-          <a href="tenants.html" class="btn-primary">I’m a Tenant – Find Me a Room</a>
-          <a href="landlords.html" class="btn-outline">I’m a Landlord – List My Room</a>
+          <a class="btn-primary" href="tenant-form.html">I’m a Tenant – Find Me a Room</a>
+          <a class="btn-outline" href="landlord-form.html">I’m a Landlord – List My Room</a>
+        </div>
+
+        <div class="hero-note">
+          <strong>Simple process:</strong> you submit one form, Divine matches you with realistic options instead of endless scrolling and random messages.
         </div>
       </div>
-      <aside class="hero-card">
+
+      <aside class="hero-card" aria-label="Service overview">
         <div class="hero-card-header">
           <div class="hero-card-title">How Waldorf Rooms works</div>
           <div class="hero-card-pill">Local · Human · Filtered</div>
+        </div>
+        <div class="hero-card-body">
+          For tenants and landlords who are serious about safe, calm room connections around Waldorf.
         </div>
         <ul class="hero-card-list">
           <li>Tenants share budget, area, and timing once.</li>
@@ -53,24 +68,10 @@
         </ul>
       </aside>
     </section>
-
-    <section id="why">
-      <h2>Why choose Waldorf Rooms</h2>
-      <p>Local focus, human support, and privacy for everyone involved.</p>
-      <div class="why-grid">
-        <div class="why-card"><h3>Local, not random</h3><p>Rooms and shared spaces focused on Waldorf, La Plata, Bryans Road & Accokeek — not far-away areas.</p></div>
-        <div class="why-card"><h3>Human guidance</h3><p>Divine listens to what you need and points you to realistic, suitable options.</p></div>
-        <div class="why-card"><h3>Safer connections</h3><p>You connect with real landlords and properly guided tenants, with clear expectations.</p></div>
-        <div class="why-card"><h3>Privacy protected</h3><p>Landlord phone numbers and exact addresses stay private until both sides are ready.</p></div>
-        <div class="why-card"><h3>Time-saving</h3><p>No more chasing dozens of adverts. One clear process with calm communication.</p></div>
-      </div>
-    </section>
   </main>
 
   <footer>
     Waldorf Rooms · Powered by Divine Taku · Call/WhatsApp: 240-230-8731 · Email: waldorfrooms@gmail.com
   </footer>
-
-  <script src="scripts.js"></script>
 </body>
 </html>

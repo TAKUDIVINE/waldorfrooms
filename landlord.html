@@ -1,52 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>List a Room | Waldorf Rooms</title>
-  <meta name="description" content="Publish your room or rental in Waldorf, La Plata, Bryans Road, or Accokeek. Tenants contact Divine first." />
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landlord Form | Waldorf Rooms</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header><!-- same nav --></header>
-
+  <header></header>
   <main>
-    <section id="landlords">
-      <h2>For Landlords & Homeowners</h2>
-      <form id="landlordForm" onsubmit="event.preventDefault(); uploadListing(this);" enctype="multipart/form-data">
-        <label for="landlord_name">Your Name (not shown to tenants)</label>
-        <input type="text" id="landlord_name" name="landlord_name" required />
-        <label for="landlord_email">Your Email (not shown to tenants)</label>
-        <input type="email" id="landlord_email" name="landlord_email" required />
-        <label for="landlord_phone">Phone / WhatsApp (optional)</label>
-        <input type="text" id="landlord_phone" name="landlord_phone" />
-        <label for="room_title">Short Listing Title</label>
-        <input type="text" id="room_title" name="room_title" required />
-        <label for="price">Monthly Price</label>
-        <input type="text" id="price" name="price" required />
-        <label for="city">City</label>
-        <select id="city" name="city" required>
-          <option value="">Select City</option>
-          <option value="Waldorf">Waldorf</option>
-          <option value="La Plata">La Plata</option>
-          <option value="Bryans Road">Bryans Road</option>
-          <option value="Accokeek">Accokeek</option>
-        </select>
-        <label for="details">Key details (no exact address)</label>
-        <textarea id="details" name="details" required></textarea>
-        <label for="room_image">Upload images from your device</label>
-        <input type="file" id="room_image" name="room_image" accept="image/*" required />
-        <button type="submit">Publish Listing</button>
+    <section id="landlord-form">
+      <h2>Landlord Listing</h2>
+      <form action="#" method="POST">
+        <label>Name: <input type="text" name="name"></label>
+        <label>Email: <input type="email" name="email"></label>
+        <label>Room Location: <input type="text" name="location"></label>
+        <label>Price: <input type="number" name="price"></label>
+        <button type="submit">Submit</button>
       </form>
-
-      <section class="faq-wrapper">
-        <div class="faq-item"><p>Landlords pay for pre-screened tenant leads and room-matching support.</p></div>
-        <div class="faq-item"><p>Yes. Divine guides tenants, but you always decide who you accept into your home.</p></div>
-      </section>
     </section>
   </main>
-
   <footer></footer>
-  <script src="scripts.js"></script>
 </body>
 </html>
